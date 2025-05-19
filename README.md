@@ -214,4 +214,4 @@ For support, email your-email@example.com or open an issue in the repository.
 
 ---
 
-Made with ❤️ by [Your Name] 
+Designed & Developed by The Dev Knights www.thedevknights.com | info@thedevknights.com
