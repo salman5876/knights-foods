@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="brand_name"></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-text brand_name" id="brand-text"></span>
+            </a>
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <i class="fas fa-home nav-icon"></i>
+                            <span class="nav-text"> Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">
+                            <i class="fas fa-utensils nav-icon"></i>
+                            <span class="nav-text"> Menu</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-info-circle nav-icon"></i>
+                            <span class="nav-text"> About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <span class="nav-text"> Contact</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="theme-dropdown">
+                            <button class="theme-switcher" id="themeSwitcher">
+                                <i class="fas fa-palette"></i>
+                            </button>
+                            <div class="theme-menu">
+                                <div class="theme-option" data-theme="default">
+                                    <div class="theme-preview default-theme"></div>
+                                    <span class="theme-name">Default</span>
+                                </div>
+                                <div class="theme-option" data-theme="dark">
+                                    <div class="theme-preview dark-theme"></div>
+                                    <span class="theme-name">Dark</span>
+                                </div>
+                                <div class="theme-option" data-theme="midnight">
+                                    <div class="theme-preview midnight-theme"></div>
+                                    <span class="theme-name">Midnight</span>
+                                </div>
+                                <div class="theme-option" data-theme="nature">
+                                    <div class="theme-preview nature-theme"></div>
+                                    <span class="theme-name">Nature</span>
+                                </div>
+                                <div class="theme-option" data-theme="sunset">
+                                    <div class="theme-preview sunset-theme"></div>
+                                    <span class="theme-name">Sunset</span>
+                                </div>
+                                <div class="theme-option" data-theme="ocean">
+                                    <div class="theme-preview ocean-theme"></div>
+                                    <span class="theme-name">Ocean</span>
+                                </div>
+                                <div class="theme-option" data-theme="royal">
+                                    <div class="theme-preview royal-theme"></div>
+                                    <span class="theme-name">Royal</span>
+                                </div>
+                                <div class="theme-option" data-theme="autumn">
+                                    <div class="theme-preview autumn-theme"></div>
+                                    <span class="theme-name">Autumn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-video-bg">
+            <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <source src="https://cdn.coverr.co/videos/coverr-preparing-food-close-up-3284/1080p.mp4" type="video/mp4">
+                <source src="https://cdn.coverr.co/videos/coverr-preparing-food-close-up-3284/720p.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="brand-name">Welcome to <span class="brand_name"></span></div>
+                <h1>Discover <span>Flavor</span></h1>
+                <p>Where every bite is a journey of taste and quality. Experience the perfect blend of tradition and innovation in every dish we serve.</p>
+                <div class="hero-buttons">
+                    <a href="ordering.html" class="btn btn-primary">Explore Menu</a>
+                    <a href="ordering.html" class="btn btn-outline-light">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Journey</span>
+                <h2 class="section-title">Our Story</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Restaurant Interior" class="img-fluid rounded shadow">
+                        <div class="experience-badge">
+                            <span class="years">10+</span>
+                            <span class="text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <h3>Where Passion Meets <span class="highlight">Perfection</span></h3>
+                        <p class="lead">At <span class="brand_name"></span>, we believe in serving more than just food - we create memorable dining experiences that linger in your memory.</p>
+                        <p>Our journey began with a simple vision: to revolutionize fast food by combining premium ingredients with innovative culinary techniques. Today, we stand as a testament to our commitment to quality and excellence.</p>
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Fresh Ingredients</h4>
+                                    <p>Locally sourced, premium quality</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Expert Chefs</h4>
+                                    <p>Years of culinary expertise</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Quick Service</h4>
+                                    <p>Efficient and friendly</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Premium Quality</h4>
+                                    <p>Uncompromising standards</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Selection</span>
+                <h2 class="section-title">Our Menu</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="menu-categories mb-4">
+                <button class="btn btn-outline-primary active" data-category="all">
+                    <i class="fas fa-utensils"></i> All Items
+                </button>
+                <button class="btn btn-outline-primary" data-category="burgers">
+                    <i class="fas fa-hamburger"></i> Burgers
+                </button>
+                <button class="btn btn-outline-primary" data-category="sides">
+                    <i class="fas fa-french-fries"></i> Sides
+                </button>
+                <button class="btn btn-outline-primary" data-category="drinks">
+                    <i class="fas fa-glass-martini-alt"></i> Drinks
+                </button>
+            </div>
+            <div class="row menu-items">
+                <!-- Burgers -->
+                <div class="col-md-4 menu-item" data-category="burgers">
+                    <div class="card">
+                        <div class="card-badge">Popular</div>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Classic Burger">
+                            <div class="card-overlay">
+                                <a href="ordering.html" class="btn btn-view">
+                                    <span class="btn-text">View</span>
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                            <h5 class="card-title">Classic Burger</h5>
+                            <p class="card-text">Premium beef patty with fresh vegetables and our special sauce.</p>
+                            <div class="card-footer">
+                                <div class="price-tag">
+                                    <span class="price">PKR 1,499</span>
+                                    <span class="original-price">PKR 1,999</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sides -->
+                <div class="col-md-4 menu-item" data-category="sides">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Crispy Fries">
+                            <div class="card-overlay">
+                                <a href="ordering.html" class="btn btn-view">
+                                    <span class="btn-text">View</span>
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+                            <h5 class="card-title">Crispy Fries</h5>
+                            <p class="card-text">Golden, crispy fries seasoned with our special blend of spices.</p>
+                            <div class="card-footer">
+                                <div class="price-tag">
+                                    <span class="price">PKR 299</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Drinks -->
+                <div class="col-md-4 menu-item" data-category="drinks">
+                    <div class="card">
+                        <div class="card-badge">New</div>
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="card-img-top" alt="Chocolate Milkshake">
+                            <div class="card-overlay">
+                                <a href="ordering.html" class="btn btn-view">
+                                    <span class="btn-text">View</span>
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+                            <h5 class="card-title">Chocolate Milkshake</h5>
+                            <p class="card-text">Rich, creamy chocolate milkshake topped with whipped cream.</p>
+                            <div class="card-footer">
+                                <div class="price-tag">
+                                    <span class="price">PKR 399</span>
+                                </div>
+                                <button class="btn btn-primary add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Limited Time</span>
+                <h2 class="section-title">Special Offers</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="offer-card">
+                        <div class="offer-badge">Weekend Special</div>
+                        <div class="offer-content">
+                            <div class="offer-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h3>Buy One Get One Free</h3>
+                            <p>Enjoy our signature burgers with this amazing deal!</p>
+                            <ul class="offer-features">
+                                <li><i class="fas fa-check"></i> Valid on all burgers</li>
+                                <li><i class="fas fa-check"></i> Every weekend</li>
+                                <li><i class="fas fa-check"></i> No minimum purchase</li>
+                            </ul>
+                            <div class="offer-timer">
+                                <div class="timer-item">
+                                    <span class="timer-number">24</span>
+                                    <span class="timer-label">Hours</span>
+                                </div>
+                                <div class="timer-item">
+                                    <span class="timer-number">45</span>
+                                    <span class="timer-label">Minutes</span>
+                                </div>
+                                <div class="timer-item">
+                                    <span class="timer-number">60</span>
+                                    <span class="timer-label">Seconds</span>
+                                </div>
+                            </div>
+                            <a href="ordering.html" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="offer-card">
+                        <div class="offer-badge">Family Pack</div>
+                        <div class="offer-content">
+                            <div class="offer-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Family Feast Deal</h3>
+                            <p>Perfect for family gatherings and celebrations!</p>
+                            <ul class="offer-features">
+                                <li><i class="fas fa-check"></i> 4 Premium Burgers</li>
+                                <li><i class="fas fa-check"></i> 4 Large Fries</li>
+                                <li><i class="fas fa-check"></i> 4 Refreshing Drinks</li>
+                            </ul>
+                            <div class="offer-price">
+                                <span class="original-price">PKR 39.99</span>
+                                <span class="current-price">PKR 29.99</span>
+                                <span class="discount">Save 25%</span>
+                            </div>
+                            <a href="#menu" class="btn btn-primary">Get Deal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Food Gallery</span>
+                <h2 class="section-title">Our Creations</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="gallery-filters mb-4">
+                <button class="btn btn-outline-primary active" data-filter="all">
+                    <i class="fas fa-th-large"></i> All
+                </button>
+                <button class="btn btn-outline-primary" data-filter="burgers">
+                    <i class="fas fa-hamburger"></i> Burgers
+                </button>
+                <button class="btn btn-outline-primary" data-filter="sides">
+                    <i class="fas fa-french-fries"></i> Sides
+                </button>
+                <button class="btn btn-outline-primary" data-filter="drinks">
+                    <i class="fas fa-glass-martini-alt"></i> Drinks
+                </button>
+            </div>
+            <div class="row g-4 gallery-grid">
+                <div class="col-md-4 gallery-item" data-category="burgers">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Classic Burger">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Classic Burger</h4>
+                                <p>Premium beef patty with fresh vegetables</p>
+                                <button class="btn btn-light btn-sm">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="sides">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Crispy Fries">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Crispy Fries</h4>
+                                <p>Golden fries with special seasoning</p>
+                                <button class="btn btn-light btn-sm">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 gallery-item" data-category="drinks">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Chocolate Milkshake">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Chocolate Milkshake</h4>
+                                <p>Rich and creamy chocolate delight</p>
+                                <button class="btn btn-light btn-sm">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"The best burgers I've ever had! The quality and taste are consistently amazing. The service is always friendly and the atmosphere is perfect for a casual meal."</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe" class="author-image">
+                                <div class="author-info">
+                                    <h4>John Doe</h4>
+                                    <span>Regular Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"Amazing service and delicious food! The staff is always friendly and welcoming. Their special offers are unbeatable, and the quality never disappoints."</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Jane Smith" class="author-image">
+                                <div class="author-info">
+                                    <h4>Jane Smith</h4>
+                                    <span>Food Blogger</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Order Now</span>
+                <h2 class="section-title">Place Your Order</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="order-container">
+                <!-- Address Card -->
+                <div class="address-card">
+                    <div class="address-header">
+                        <h3>Our Location</h3>
+                        <p>Visit us at our restaurant or order online for delivery</p>
+                    </div>
+                    <div class="address-details">
+                        <div class="address-item">
+                            <div class="address-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="address-text">
+                                <h4>Main Restaurant</h4>
+                                <p>123 Food Street, Culinary District<br>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <div class="address-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="address-text">
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Sunday<br>11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="address-item">
+                            <div class="address-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="address-text">
+                                <h4>Contact Us</h4>
+                                <p>+92 300 1234567<br>info@restaurant.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="ordering.html" class="order-now-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Order Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <!-- <div class="map-section">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.0!2d67.0!3d24.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ4JzAwLjAiTiA2N8KwMDAnMDAuMCJF!5e0!3m2!1sen!2s!4v1234567890"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand">
+                            <h3><span class="brand_name"></span></h3>
+                            <p>Premium fast food experience with a focus on quality and taste. We bring you the best flavors in town.</p>
+                            <div class="footer-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                                <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                                <li><a href="#menu"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                                <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                                <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>123 Food Street, City Center, Country</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>+1 234 567 8900</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>info@knightsfoods.com</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-clock"></i>
+                                    <span>Mon-Sun: 9:00 AM - 10:00 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-newsletter">
+                            <h4>Newsletter</h4>
+                            <p>Subscribe to our newsletter for special offers and updates.</p>
+                            <form class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Your email address">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="payment-methods">
+                                <h5>We Accept</h5>
+                                <div class="payment-icons">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-amex"></i>
+                                    <i class="fab fa-cc-paypal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright copyright_text">&copy; 2024 Knights Foods. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-black text-center text-white py-3 small">
+        <div class="container">
+          <p class="mb-0">
+            Designed & Developed by 
+            <strong>The Dev Knights</strong> —
+            <a href="https://www.thedevknights.com" class="text-decoration-none text-white" target="_blank">www.thedevknights.com</a> |
+            <a href="mailto:info@thedevknights.com" class="text-decoration-none text-white">info@thedevknights.com</a>
+          </p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/branding.js"></script>
+    <script>
+        // Scroll to Top functionality
+        const scrollToTop = document.querySelector('.scroll-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTop.classList.add('show');
+            } else {
+                scrollToTop.classList.remove('show');
+            }
+        });
+
+        scrollToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 
